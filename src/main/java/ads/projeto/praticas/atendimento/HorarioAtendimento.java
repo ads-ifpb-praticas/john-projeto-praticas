@@ -24,7 +24,7 @@ public class HorarioAtendimento implements Serializable {
     private long id;
     private DayOfWeek diaSemana;
     private LocalDateTime chegada;
-    private LocalDateTime Saida;
+    private LocalDateTime saida;
 
     public HorarioAtendimento() {
     }
@@ -33,7 +33,7 @@ public class HorarioAtendimento implements Serializable {
         this.id = id;
         this.diaSemana = diaSemana;
         this.chegada = chegada;
-        this.Saida = Saida;
+        this.saida = Saida;
     }
 
     public long getId() {
@@ -61,11 +61,11 @@ public class HorarioAtendimento implements Serializable {
     }
 
     public LocalDateTime getSaida() {
-        return Saida;
+        return saida;
     }
 
     public void setSaida(LocalDateTime Saida) {
-        this.Saida = Saida;
+        this.saida = Saida;
     }
 
 }
